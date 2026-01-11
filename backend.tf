@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "nextpath-app-project-terraform-state"
+    bucket = "terraform-automation-infra-bucket"
     key = "main"
-    region = "ap-south-1"
+    region = "us-east-1"
     dynamodb_table = "my-dynamodb-table"
   }
 }
