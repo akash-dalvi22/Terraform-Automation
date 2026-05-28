@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-automation-infra-bucket"
+    bucket = "terraform-automation-infra-bucket-1"
     key = "main"
     region = "us-east-1"
-    dynamodb_table = "my-dynamodb-table"
+    use_lockfile = true
   }
 }
 
